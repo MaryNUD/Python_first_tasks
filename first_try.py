@@ -65,8 +65,17 @@ while flag:
         flag = False
     i += 1'''
 
-r = range (1, 10, 2)
+'''r = range (1, 10, 2)
 for i in r:
     print (i)
 for i in 'Mary':
-    print (i)
+    print (i)'''
+
+'''text = 'True LoVe exiSts, believe me!'
+print (len(text))
+print ('love' in text)
+print ('Falling' in text)
+print(text.lower())
+print(text.upper())
+print(text.replace('LoVe', 'LOVE'))'''
+       
