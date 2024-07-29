@@ -41,10 +41,14 @@ print (c)
 c = a or b
 print (c)'''
 
-print ('Enter username')
+'''print ('Enter username')
 username = input()
 if username == 'Mary':
     print ('Glad to see you, Mary!')
 else: 
-    print ('Sorry, you cannot enter!')
+    print ('Sorry, you cannot enter!')'''
 
+n = 85
+while n >= 5:
+    n //= 5
+print (n)
