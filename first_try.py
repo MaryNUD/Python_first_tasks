@@ -23,11 +23,20 @@ m = '234'
 print (m * 2)
 print (int(m) * 2)'''
 
-inter = 6
+'''inter = 6
 print (inter)
 inter += 3
 print (inter)
 inter -= 2 
 print (inter)
 inter **= 2
-print (inter)
+print (inter)'''
+
+a = 1 < 3
+print (a)
+b = 5 > 6
+print (b)
+c = a and b
+print (c)
+c = a or b
+print (c)
