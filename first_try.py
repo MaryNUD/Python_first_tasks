@@ -53,7 +53,7 @@ while n >= 5:
     n //= 5
 print (n)'''
 
-n = int(input())
+'''n = int(input())
 flag = True
 i = 2
 while flag:
@@ -63,4 +63,10 @@ while flag:
     elif i > n // 2: # делить числа не может превышать введенное число, деленное на 2
         print(n)
         flag = False
-    i += 1
+    i += 1'''
+
+r = range (1, 10, 2)
+for i in r:
+    print (i)
+for i in 'Mary':
+    print (i)
