@@ -32,11 +32,19 @@ print (inter)
 inter **= 2
 print (inter)'''
 
-a = 1 < 3
+'''a = 1 < 3
 print (a)
 b = 5 > 6
 print (b)
 c = a and b
 print (c)
 c = a or b
-print (c)
+print (c)'''
+
+print ('Enter username')
+username = input()
+if username == 'Mary':
+    print ('Glad to see you, Mary!')
+else: 
+    print ('Sorry, you cannot enter!')
+
