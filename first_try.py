@@ -16,9 +16,18 @@ print (a, b, s)
 print ('{} - {} - {}'.format(a,b,s))
 print (f'first - {a} second - {b} third - {s}')'''
 
-n = 1.345
+'''n = 1.345
 print (n * 2)
 print (int(n))
 m = '234'
 print (m * 2)
-print (int(m) * 2)
+print (int(m) * 2)'''
+
+inter = 6
+print (inter)
+inter += 3
+print (inter)
+inter -= 2 
+print (inter)
+inter **= 2
+print (inter)
