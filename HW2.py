@@ -40,3 +40,26 @@ if shop:
     print ('You have to go to the shop')
 else:
     print ('You do not need to go to the shop')'''
+
+'''Задача 3. Игра «Угадай число»
+Папа-программист написал для сына программу, которая просит его угадать
+число. Недостаток программы был в том, что бедному сыну приходилось её
+каждый раз перезапускать, чтобы угадывать число. Теперь, когда мы знаем
+гораздо больше, пришло время исправить этот недостаток и заодно немного
+улучшить саму игру.
+Напишите программу-игру, которая запрашивает у пользователя число до тех
+пор, пока он его не отгадает. Выводите сообщения в соответствии с примером.'''
+
+'''guess_n = 13 
+print ('Guess the number from 0 to 20')
+try_sum = 0
+while True:
+    try_sum += 1
+    n = int(input('Enter your number:'))
+    if n != guess_n:
+        print ('You are wrong. Try again!')
+
+    elif n == guess_n:
+        print ('You are right! The number we chose is', guess_n)
+        break
+print ('The number of tries is', try_sum)'''
