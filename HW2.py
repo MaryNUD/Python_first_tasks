@@ -64,3 +64,19 @@ while True:
         print ('You are right! The number we chose is', guess_n)
         break
 print ('The number of tries is', try_sum)'''
+
+'''Задача 4. Посчитай чужую зарплату...
+Бухгалтер устала постоянно считать вручную среднегодовую зарплату
+сотрудников компании и, чтобы облегчить себе жизнь, обратилась к
+программисту.
+Напишите программу, которая принимает от пользователя зарплату сотрудника
+за каждый из 12 месяцев и выводит на экран среднюю зарплату за год.'''
+
+'''month = 1
+sum = 0
+while month <= 12:
+    print ('Month', month, 'salary:')
+    salary = int(input())
+    sum += salary
+    month += 1
+print ('Average annual salary is', sum / 12)'''
