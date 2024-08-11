@@ -80,3 +80,21 @@ while month <= 12:
     sum += salary
     month += 1
 print ('Average annual salary is', sum / 12)'''
+
+'''Задача 5. Пропавшая карточка
+Для настольной игры используются карточки с номерами от 1 до N. Одна
+карточка потерялась. Напишите программу, которая поможет найти потерянную
+карточку, если номера оставшихся известны. Найдите её, зная номера
+оставшихся карточек.
+Введите число карточек — N.
+Затем введите N − 1 номера оставшихся карточек. Они могут быть введены в
+любом порядке.'''
+
+'''total_c = int(input('Enter an overall number of cards:'))
+total_sum = 0
+for card in range (1, total_c + 1):
+    total_sum += card
+for remaining_card in range (total_c -1):
+    remaining_card = int(input('Enter the number of a remaining card:'))
+    total_sum -= remaining_card
+print ('The number of the lost card is', total_sum)'''
