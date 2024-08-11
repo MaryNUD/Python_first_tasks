@@ -56,9 +56,10 @@ try_sum = 0
 while True:
     try_sum += 1
     n = int(input('Enter your number:'))
-    if n != guess_n:
-        print ('You are wrong. Try again!')
-
+    if n < guess_n:
+        print ('Your number is smaller then ours. Try again!')
+    elif n > guess_n:
+        print ('Your number is bigger then ours. Try again!')
     elif n == guess_n:
         print ('You are right! The number we chose is', guess_n)
         break
