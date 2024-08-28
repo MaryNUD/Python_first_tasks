@@ -28,3 +28,27 @@
 # k = int(input('Enter k value for shift: '))
 # new_list = numbers[-k:] + numbers[:-k]
 # print (new_list)   # не будет работать, тк 5 должна быть 1ым элементом, а 4 вторым
+
+
+# negafibonnachi 
+# Задача 1 НЕГАФИБОНАЧЧИ по желанию
+# Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
+# Пример:
+# для k = 9 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+# negafib = [0, 1]
+# k = int(input('Enter k value to fix the size of the list: '))
+# сделать ряд фиб для положительных чисел добавляя значения 
+
+# Задача №3. Решение в группах
+# Напишите программу для печати всех уникальных
+# значений в словаре.
+list =  [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, 
+{" V ":"S009"}, {"VIII":"S007"}]
+values_list = []
+for el in list:
+    n = el.values()
+    values_list.append(*n)
+print (values_list)
+values_list = set(values_list)
+print (f'The list of unique values is: {values_list}')
