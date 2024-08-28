@@ -36,19 +36,30 @@
 # Пример:
 # для k = 9 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
-# negafib = [0, 1]
-# k = int(input('Enter k value to fix the size of the list: '))
+
+k = int(input('Enter k value to fix the size of the list: '))
+negafib_pos = [0, 1] + [0] * (k - 2)
+negafib_neg = [0, 1] + [0] * (k - 2)
+for i in range(2, k):
+    negafib_pos[i] = negafib_pos[i - 1] + negafib_pos[i - 2]
+    negafib_neg[i] = negafib_neg[i - 2] - negafib_neg[i - 1]
+negafib_neg.pop(0)
+negafib_neg.reverse()
+negafib = negafib_neg + negafib_pos
+print (negafib)
+
 # сделать ряд фиб для положительных чисел добавляя значения 
 
 # Задача №3. Решение в группах
 # Напишите программу для печати всех уникальных
 # значений в словаре.
-list =  [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, 
-{" V ":"S009"}, {"VIII":"S007"}]
-values_list = []
-for el in list:
-    n = el.values()
-    values_list.append(*n)
-print (values_list)
-values_list = set(values_list)
-print (f'The list of unique values is: {values_list}')
+
+# list =  [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, 
+# {" V ":"S009"}, {"VIII":"S007"}]
+# values_list = []
+# for el in list:
+#     n = el.values()
+#     values_list.append(*n)
+# print (values_list)
+# values_list = set(values_list)
+# print (f'The list of unique values is: {values_list}')
